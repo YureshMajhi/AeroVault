@@ -3,43 +3,42 @@ import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex min-h-screen">
-      <section className="bg-brand p-10 hidden w-1/2 items-center justify-center lg:flex xl:2/5">
-        <div className="flex max-h-[800px] max-w-[430px] flex-col justify-center space-y-12">
-          <Image
-            src={"/assets/icons/aerovault-transparent.png"}
-            alt="logo"
-            width={254}
-            height={82}
-            className="h-auto"
-          />
+    <div className="flex min-h-screen justify-center items-center bg-gradient-to-r from-brand-100 to-brand">
+      <div className="w-xl min-h-[540px] flex bg-white border-collapse shadow-drop-2 rounded-3xl overflow-hidden">
+        <section className="hidden w-1/2 p-16 bg-[#d2dcfc] md:flex flex-col xs:hidden">
+          <div className="h-1/3">
+            <Image
+              src={"/assets/icons/aerovault-transparent.png"}
+              alt="logo"
+              width={254}
+              height={82}
+            />
 
-          <div className="space-y-5 text-white">
-            <h1>Smart. Secure. Simple file management.</h1>
-            <p className="body-1">Your cloud vault for every document.</p>
+            <h1 className="text-2xl text-center">Smart. Secure. Simple.</h1>
           </div>
-          <Image
-            src={"/assets/images/files.png"}
-            alt="files"
-            width={342}
-            height={342}
-            className="transition-all hover:rotate-2 hover:scale-105"
-          />
-        </div>
-      </section>
+          <div className="h-2/3">
+            <Image
+              src={"/assets/images/aerovault logo.png"}
+              alt="files"
+              width={342}
+              height={342}
+            />
+          </div>
+        </section>
 
-      <section className="flex flex-1 flex-col items-center bg-white p-4 py-10 lg:justify-center lg:p-10 lg:py-0">
-        <div className="mb-16 lg:hidden">
-          <Image
-            src={"/assets/icons/aerovault-transparent.png"}
-            alt="logo"
-            width={224}
-            height={82}
-            className="h-auto w-[200px] lg:w-[250px]"
-          />
-        </div>
-        {children}
-      </section>
+        <section className="md:w-1/2 p-16 bg-[]">
+          <div className="md:hidden">
+            <Image
+              src={"/assets/icons/aerovault-transparent.png"}
+              alt="logo"
+              width={224}
+              height={82}
+              className="h-auto w-[200px] md:w-[250px]"
+            />
+          </div>
+          {children}
+        </section>
+      </div>
     </div>
   );
 };

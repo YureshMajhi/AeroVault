@@ -103,7 +103,7 @@
   }
 
   .primary-btn {
-    @apply bg-brand hover:bg-brand-100 transition-all rounded-full button !important;
+    @apply bg-brand hover:opacity-70 transition-all rounded-xl button !important;
   }
 
   .shad-no-focus {
