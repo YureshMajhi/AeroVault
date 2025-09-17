@@ -26,7 +26,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </section>
 
-        <section className="md:w-1/2 p-16 bg-[]">
+        <section className="md:w-1/2 p-10 lg:p-16 bg-[]">
           <div className="md:hidden">
             <Image
               src={"/assets/icons/aerovault-transparent.png"}
