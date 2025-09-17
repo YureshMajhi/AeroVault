@@ -134,6 +134,18 @@
   .error-message {
     @apply body-2 mx-auto w-fit rounded-xl bg-error/5 px-8 py-4 text-center text-error !important;
   }
+
+  .shad-otp {
+    @apply w-full flex gap-1 sm:gap-2 justify-between !important;
+  }
+
+  .shad-otp-slot {
+    @apply text-[40px] font-medium rounded-xl ring-brand shadow-drop-1 text-brand-100 justify-center flex border-2 border-light-300 size-12 md:size-16 gap-5 !important;
+  }
+
+  .shad-submit-btn {
+    @apply bg-brand button hover:hover:opacity-70 transition-all rounded-xl !important;
+  }
 }
 
 @layer base {
